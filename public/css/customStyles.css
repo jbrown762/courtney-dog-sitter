@@ -1,0 +1,117 @@
+@media (min-width: 768px) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+}
+
+.body {
+    font-family: Avenir, Helvetica Neue, Segoe UI, Roboto, sans-serif;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.jumbotron {
+    margin-bottom: 0;
+}
+
+.fa {
+    margin-right: 10px
+}
+
+.margin-bottom-50 {
+    margin-bottom: 50px
+}
+
+.service {
+    font-weight: normal
+}
+
+.contact-info {
+    font-weight: normal
+}
+
+.info-block {
+    background-color: rgb(34, 184, 141);
+    color: white
+}
+
+.gallery-block{
+    background-color: white
+}
+
+.link-blocks {
+    background-color: white
+}
+
+.link-blocks-heading {
+    padding-bottom: 50px;
+}
+
+.app-block {
+    margin-bottom: 50px
+}
+
+.contact-block {
+    background-color: rgb(34, 184, 141);
+    color: white
+}
+
+.testimonials-block {
+    background-color: white
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+.experience-text {
+    margin-top: 50px;
+}
+
+.aquarium-color {
+    background-color: rgb(34, 152, 184);
+    color: white
+}
+
+.zoo-color {
+    background-color: rgb(184, 66, 34);
+    color: white
+}
+
+.kennel-color {
+    background-color: rgb(184, 141, 34);
+    color: white
+}
+
+.red {
+    background-color: red
+}
+
+
+.overlay {  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+  opacity: 1;
+  background: rgba(39, 42, 43, 0.8);
+  transition: opacity 200ms ease-in-out;
+  border-radius: 4px;
+  margin: -15px 0 0 -15px;
+  button { 
+  margin:5px;
+  } 
+  &:hover {
+    opacity: 0;
+  }
+}
+
