@@ -1,11 +1,27 @@
 <ng-include src="'views/contact-info.html'"></ng-include>
 
-<div class="jumbotron contact-block">
-    <hr>
+<div class="jumbotron contact-form-block">
 
-    <form novalidate>
+    <div class="row">
+        <form class="col-sm-offset-4 col-sm-4 contact-form" novalidate>
+            <h2 class="text-center">Contact me!</h2>
 
+            <label for="name" class="required-asterisk">name</label>
+            <input id="name" type="text" class="form-control input-style">
 
-    </form>
+            <br>
 
+            <label for="email" class="required-asterisk">email</label>
+            <input id="email" type="email" class="form-control input-style">
+            
+            <br>
+            
+            <label for="info" class="required-asterisk">tell me about your pets, days you need me, anything!</label>
+            <textarea id="info" class="form-control input-style" rows="3"></textarea>
+            
+            <br>
+            
+            
+        </form>
+    </div>
 </div>
