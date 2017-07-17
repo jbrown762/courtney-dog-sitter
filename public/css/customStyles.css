@@ -2,6 +2,22 @@
     .text-xs-center {
         text-align: center;
     }
+    .margin-bottom-xs-90 {
+        margin-bottom: 70px
+    }
+    .email-sent-alert {
+        left: 5%;
+        right: 5%;
+    }
+    .fixed-top {
+        position: fixed !important;
+        left: 0;
+        right: 0;
+        z-index: 900
+    }
+    .content {
+        padding-top: 50px
+    }
 }
 
 @media (min-width: 768px) {
@@ -22,9 +38,45 @@
     .text-sm-center {
         text-align: center;
     }
+    .margin-bottom-sm-30 {
+        margin-bottom: 30px
+    }
+    .right-border:after {
+        content: "";
+        position: absolute;
+        right: 0;
+        z-index: 100;
+        top: 50px;
+        width: 2px;
+        height: 35%;
+        background: #555;
+    }
+    .email-sent-alert {
+        width: 300px;
+        right: 5%;
+    }
+    .contact-form {
+        border-radius: 15px;
+    }
 }
 
-.body {
+.navbar-toggle {
+    border: 0
+}
+
+.navbar-toggle .icon-bar {
+    background-color: rgb(34, 184, 141) !important;
+}
+
+nav {
+    box-shadow: 2px 0 12px #544f54;
+}
+
+.content {
+    font-family: Avenir, Helvetica Neue, Segoe UI, Roboto, sans-serif;
+}
+
+.navbar {
     font-family: Avenir, Helvetica Neue, Segoe UI, Roboto, sans-serif;
 }
 
@@ -70,6 +122,10 @@
     background-color: white
 }
 
+.pets-block {
+    background-color: white
+}
+
 .link-blocks {
     background-color: white
 }
@@ -95,15 +151,40 @@
 
 .contact-form {
     background-color: white;
-    padding: 30px;
-    border-radius: 15px;
+    padding: 35px;
     font-size: 1.2em;
     box-shadow: 2px 8px 12px #544f54;
+}
+
+.email-sent-alert {
+    position: fixed;
+    height: auto;
+    padding: 15px;
+    text-align: center;
+    top: 5%;
+    color: white;
+    background-color: #1B1B1B;
+    opacity: 1;
+    border-radius: 5px;
+    z-index: 999;
+}
+
+.fade-out.ng-hide {
+    opacity: 0;
+}
+
+.fade-out.ng-hide-add,
+.fade-out.ng-hide-remove {
+    transition: all linear 0.4s;
 }
 
 .required-asterisk::after {
     content: ' *';
     color: red;
+}
+
+.fa-padding {
+    padding: 5px
 }
 
 .input-style {
@@ -124,6 +205,13 @@
 .experience-text {
     margin-top: 50px;
 }
+
+
+/*
+.fa {
+    top: 0px;
+}
+*/
 
 
 /*
@@ -148,6 +236,13 @@
 .kennel-color {
     background-color: rgb(184, 141, 34);
     color: white
+}
+
+.footer {
+    background-color: #1B1B1B;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px
 }
 
 .red {

@@ -1,4 +1,4 @@
-var app = angular.module('hammApp', ['ngRoute']);
+var app = angular.module('hammApp', ['ngRoute', 'ngAnimate']);
 
 // configure our routes
 app.config(function ($routeProvider) {

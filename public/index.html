@@ -15,9 +15,17 @@
     <!--FONT AWESOME-->
     <link rel="stylesheet" href="libraries/font-awesome.min.css">
 
-    <!-- load angular and angular route via CDN -->
+    <!--ANGULAR-->
+<!--
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
+-->
+
+
+    <!--ANGULAR-->
+    <script src="libraries/angular.js"></script>
+    <script src="libraries/ngRoute.js"></script>
+    <script src="libraries/ngAnimate.js"></script>
 
     <!--ANGULAR SCRIPTS-->
     <script src="script.js"></script>
@@ -35,7 +43,7 @@
 <body ng-controller="indexController as ic">
     <!-- HEADER AND NAVBAR -->
     <header>
-        <nav class="navbar navbar-default">
+        <nav class="navbar navbar-default fixed-top">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -51,22 +59,22 @@
 
                     <ul class="nav navbar-nav">
                         <li>
-                            <a href="#/" data-toggle="collapse" data-target=".navbar-collapse.in">
+                            <a href="#!/" data-toggle="collapse" data-target=".navbar-collapse.in">
                                 <h4>home</h4>
                             </a>
                         </li>
                         <li>
-                            <a href="#/about" data-toggle="collapse" data-target=".navbar-collapse.in">
+                            <a href="#!/about" data-toggle="collapse" data-target=".navbar-collapse.in">
                                 <h4>about</h4>
                             </a>
                         </li>
                         <li>
-                            <a href="#/gallery" data-toggle="collapse" data-target=".navbar-collapse.in">
+                            <a href="#!/gallery" data-toggle="collapse" data-target=".navbar-collapse.in">
                                 <h4>pics</h4>
                             </a>
                         </li>
                         <li>
-                            <a href="#/contact" data-toggle="collapse" data-target=".navbar-collapse.in">
+                            <a href="#!/contact" data-toggle="collapse" data-target=".navbar-collapse.in">
                                 <h4>contact</h4>
                             </a>
                         </li>
@@ -77,14 +85,14 @@
     </header>
 
     <!-- MAIN CONTENT AND INJECTED VIEWS -->
-    <div class="body" id="main">
+    <div class="content" id="main">
         <div ng-view autoscroll></div>
     </div>
 
-    <div class="footer text-sm-center">
+    <div class="footer text-center">
         logos go here??
     </div>
-    
+
 </body>
 
 </html>
