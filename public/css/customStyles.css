@@ -5,10 +5,6 @@
     .margin-bottom-xs-90 {
         margin-bottom: 70px
     }
-    .email-sent-alert {
-        left: 5%;
-        right: 5%;
-    }
     .fixed-top {
         position: fixed !important;
         left: 0;
@@ -50,13 +46,6 @@
         width: 2px;
         height: 35%;
         background: #555;
-    }
-    .email-sent-alert {
-        width: 300px;
-        right: 5%;
-    }
-    .contact-form {
-        border-radius: 15px;
     }
 }
 
@@ -105,6 +94,10 @@ nav {
     margin-bottom: 50px
 }
 
+.margin-top-15 {
+    margin-top: 15px
+}
+
 .service {
     font-weight: normal
 }
@@ -143,54 +136,12 @@ nav {
     color: white
 }
 
-.contact-form-block {
-    background-color: rgb(34, 184, 141);
-    color: black;
-    padding-top: 0;
-}
-
-.contact-form {
-    background-color: white;
-    padding: 35px;
-    font-size: 1.2em;
-    box-shadow: 2px 8px 12px #544f54;
-}
-
-.email-sent-alert {
-    position: fixed;
-    height: auto;
-    padding: 15px;
-    text-align: center;
-    top: 5%;
-    color: white;
-    background-color: #1B1B1B;
-    opacity: 1;
-    border-radius: 5px;
-    z-index: 999;
-}
-
 .fade-out.ng-hide {
     opacity: 0;
 }
 
-.fade-out.ng-hide-add,
-.fade-out.ng-hide-remove {
-    transition: all linear 0.4s;
-}
-
-.required-asterisk::after {
-    content: ' *';
-    color: red;
-}
-
 .fa-padding {
     padding: 5px
-}
-
-.input-style {
-    border-radius: 15px;
-    padding: 20px;
-    font-size: 1em
 }
 
 .testimonials-block {
@@ -200,6 +151,58 @@ nav {
 #map {
     height: 400px;
     width: 100%;
+}
+
+.experience-container {
+    height: 300px
+}
+
+.aquarium-image {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    /*    use denim effect in photos app*/
+    background-image: url('images/aquarium.jpg');
+    background-size: cover;
+}
+
+.zoo-image {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    /*    use denim effect in photos app*/
+    background-image: url('images/aquarium.jpg');
+    background-size: cover;
+}
+
+.kennel-image {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    /*    use denim effect in photos app*/
+    background-image: url('images/aquarium.jpg');
+    background-size: cover;
+}
+
+.overlay-text {
+    position: absolute;
+    color: white;
+}
+
+.dim-bg {
+    display: inline-block;
+    background: rgb(0, 0, 0);
+    /* fallback color */
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+}
+
+.zoo-experience {
+    height: 300px
+}
+
+.kennel-experience {
+    height: 300px
 }
 
 .experience-text {
