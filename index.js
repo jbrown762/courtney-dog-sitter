@@ -20,7 +20,7 @@ app.use(bodyParser.urlencoded({
 }));
 
 // Set static path
-app.use(express.static(path.join(__dirname, 'public')))
+app.use(express.static(path.join(__dirname, 'docs')))
 
 
 app.post('/contact', function (req, res) {
