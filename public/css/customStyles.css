@@ -49,6 +49,10 @@
     }
 }
 
+html, body{
+    height: 100%;
+}
+
 .navbar-toggle {
     border: 0
 }
@@ -133,7 +137,7 @@ nav {
 
 .contact-block {
     background-color: rgb(34, 184, 141);
-    color: white
+    color: white;
 }
 
 .fade-out.ng-hide {
@@ -245,7 +249,7 @@ nav {
     background-color: #1B1B1B;
     color: white;
     padding-top: 30px;
-    padding-bottom: 30px
+    padding-bottom: 30px;
 }
 
 .red {
