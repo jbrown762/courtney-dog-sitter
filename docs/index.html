@@ -1,38 +1,22 @@
-<!-- index.html -->
 <!DOCTYPE html>
-<html ng-app="hammApp">
+<html ng-app="root">
 
 <head>
     <meta name="viewport" content="width=device-width">
 
-    <!--JQUERY-->
-    <script src="libraries/jquery.js"></script>
 
     <!--BOOTSTRAP-->
     <link rel="stylesheet" type="text/css" href="libraries/bootstrap.min.css">
-    <script src="libraries/bootstrap.min.js"></script>
 
     <!--FONT AWESOME-->
     <link rel="stylesheet" href="libraries/font-awesome.min.css">
 
     <!--ANGULAR-->
-<!--
+    <!--
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
 -->
 
-
-    <!--ANGULAR-->
-    <script src="libraries/angular.js"></script>
-    <script src="libraries/ngRoute.js"></script>
-    <script src="libraries/ngAnimate.js"></script>
-
-    <!--ANGULAR SCRIPTS-->
-    <script src="script.js"></script>
-    <script src="js/controllers/homeCtrl.js"></script>
-    <script src="js/controllers/indexCtrl.js"></script>
-    <script src="js/controllers/galleryCtrl.js"></script>
-    <script src="js/controllers/contactCtrl.js"></script>
 
     <!--CSS-->
     <link rel="stylesheet" type="text/css" href="css/customStyles.css">
@@ -41,58 +25,58 @@
 
 </head>
 
-<body ng-controller="indexController as ic">
-    <!-- HEADER AND NAVBAR -->
-    <header>
-        <nav class="navbar navbar-default fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <span class="navbar-brand visible-xs-inline">courtney hamm</span>
-                </div>
+<body>
 
-                <div class="collapse navbar-collapse navbar-ex1-collapse">
+    <root></root>
 
-                    <ul class="nav navbar-nav">
-                        <li>
-                            <a href="#!/" data-toggle="collapse" data-target=".navbar-collapse.in">
-                                <h4>home</h4>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#!/about" data-toggle="collapse" data-target=".navbar-collapse.in">
-                                <h4>about</h4>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#!/gallery" data-toggle="collapse" data-target=".navbar-collapse.in">
-                                <h4>pics</h4>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#!/contact" data-toggle="collapse" data-target=".navbar-collapse.in">
-                                <h4>contact</h4>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
 
-    <!-- MAIN CONTENT AND INJECTED VIEWS -->
-    <div class="content" id="main">
-        <div ng-view autoscroll></div>
-    </div>
+    <!--JQUERY-->
+    <script src="/libraries/jquery.js"></script>
 
-    <div class="footer text-center">
-        logos go here??
-    </div>
+    <script src="/libraries/bootstrap.min.js"></script>
+
+
+    <!--ANGULAR-->
+    <script src="libraries/angular.js"></script>
+    <script src="libraries/ngRoute.js"></script>
+    <script src="libraries/ngAnimate.js"></script>
+
+    <!--ANGULAR SCRIPTS-->
+    <script src="app/root.module.js"></script>
+    <script src="app/root.component.js"></script>
+    <script src="app/root.routes.js"></script>
+    
+    <script src="app/components/about/about.module.js"></script>
+    <script src="app/components/about/about.component.js"></script>
+
+    <script src="app/components/contact/contact.module.js"></script>
+    <script src="app/components/contact/contact.component.js"></script>
+
+    <script src="app/components/gallery/gallery.module.js"></script>
+    <script src="app/components/gallery/gallery.component.js"></script>
+
+    <script src="app/components/home/home.module.js"></script>
+    <script src="app/components/home/home.component.js"></script>
+
+    <script src="app/components/shared/shared.module.js"></script>
+    
+    <script src="app/components/shared/apps/apps.module.js"></script>
+    <script src="app/components/shared/apps/apps.component.js"></script>
+
+    <script src="app/components/shared/contact-info/contact-info.module.js"></script>
+    <script src="app/components/shared/contact-info/contact-info.component.js"></script>
+    
+    <script src="app/components/shared/experience/experience.module.js"></script>
+    <script src="app/components/shared/experience/experience.component.js"></script>
+
+    <script src="app/components/shared/information/information.module.js"></script>
+    <script src="app/components/shared/information/information.component.js"></script>
+
+    <script src="app/components/shared/map/map.module.js"></script>
+    <script src="app/components/shared/map/map.component.js"></script>
+
+    <script src="app/components/shared/testimonials/testimonials.module.js"></script>
+    <script src="app/components/shared/testimonials/testimonials.component.js"></script>
 
 </body>
 

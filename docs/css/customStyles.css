@@ -57,8 +57,8 @@ html, body{
     border: 0
 }
 
-.navbar-toggle .icon-bar {
-    background-color: rgb(34, 184, 141) !important;
+.menu-btn {
+    color: rgb(34, 184, 141);
 }
 
 nav {
