@@ -190,7 +190,7 @@ nav {
 
 .overlay-text {
     position: absolute;
-    color: white;
+    color: #ffffff;
 }
 
 .dim-bg {
@@ -213,6 +213,53 @@ nav {
     margin-top: 50px;
 }
 
+
+
+.job-image{
+    height: 250px;
+    color: #ffffff;
+}
+
+.experience-bullets {
+    padding: 50px 5%;
+    height: 100%;
+    background-color: #1B1B1B;
+}
+
+.experience-zoo{
+    width: 100%;
+    /*    use denim effect in photos app*/
+    background-image: url('images/aquarium.jpg');
+}
+
+
+.horizontal-divider {
+    color: #1B1B1B;
+    border: 0;
+    width: 80%;
+    border-top: 5px solid #1B1B1B;
+    border-right: 20px solid #1B1B1B;
+}
+
+.job-block{
+    padding: 50px 5%;    
+    height: 30%;
+    text-align: center;
+}
+
+.job{
+    font-size: 5rem;
+    font-weight: bold
+}
+
+.job-location{
+    font-size: 2rem
+}
+
+.job-description{
+    font-size: 2rem;
+    padding: 15px 0;
+}
 
 /*
 .fa {
